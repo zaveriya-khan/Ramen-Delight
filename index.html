@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Ramen Delight</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="index.html" class="ramen-logo"><h2>🍜 Ramen Delight</h2></a>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#nav-home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu-nav" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Testimonials" class="nav-link">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1 id="nav-home" class="heading">Ramen Delight</h1>
+    <p class="subheading">
+      Authentic Japanese Ramen crafted with love and tradition.
+    </p>
+    <section class="homepage">
+      <div class="home">
+        <div class="one">
+          <p>
+            <strong>Ramen Delight</strong> was born from a deep love for
+            authentic Japanese cuisine. Established in
+            <strong>Tokyo in 1998.</strong> We’ve been serving steaming bowls of
+            comfort for over two decades. Each bowl is a story – carefully
+            crafted with traditional recipes, rich broths simmered for hours,
+            and fresh, locally-sourced ingredients. Whether you’re a fan of the
+            savory richness of Yuzu or the fiery kick of Spicy Ramen, our menu
+            offers something for every ramen lover.
+            <br />
+            <span id="bold"
+              >🍜Experience tradition, taste, culture – one bowl at a
+              time.</span
+            >
+          </p>
+          <a href="#menu-nav" id="link"
+            ><button id="orderBtnHome">Explore Top Items</button></a
+          >
+        </div>
+        <img id="ramen-pic" src="images/Ramenpic-A.png" alt="Ramen" />
+      </div>
+    </section>
+    <h1 id="menu-nav" class="menu-heading">Menu</h1>
+    <section class="menu">
+      <div class="menu-item">
+        <img src="images/Shoyu-ramen.jpg" alt="Shoyu Ramen" />
+        <div class="name-rating">
+          <h3>Shoyu Ramen</h3>
+          <h3 class="rating">★★★★☆</h3>
+        </div>
+        <p>
+          A classic soy sauce-based broth with thin noodles, tender pork slices,
+          and a hint of umami.
+        </p>
+        <button class="price-button">$26</button>
+        <button class="order-button" onclick="selectRamen('Shoyu Ramen')">
+          Add to Cart
+        </button>
+      </div>
+      <div class="menu-item">
+        <img src="images/Yuzu-ramen.jpg" alt="Yuzu Ramen" />
+        <div class="name-rating">
+          <h3>Yuzu Ramen</h3>
+          <h3 class="rating">★★★★☆</h3>
+        </div>
+        <p>
+          Zesty essence of yuzu juice resulting in a tangy and uplifting flavor
+          with chilli oil and eggs.
+        </p>
+        <button class="price-button">$23</button>
+        <button class="order-button" onclick="selectRamen('Yuzu Ramen')">
+          Add to Cart
+        </button>
+      </div>
+      <div class="menu-item">
+        <img src="images/Miso-ramen.jpg" alt="Miso Ramen" />
+        <div class="name-rating">
+          <h3>Miso Ramen</h3>
+          <h3 class="rating">★★★★☆</h3>
+        </div>
+        <p>
+          A hearty miso-based broth packed with corn, butter, bean sprouts, and
+          chewy noodles.
+        </p>
+        <button class="price-button">$17</button>
+        <button class="order-button" onclick="selectRamen('Miso Ramen')">
+          Add to Cart
+        </button>
+      </div>
+      <div class="menu-item">
+        <img src="images/Kimchi-ramen.jpg" alt="Kimchi Ramen" />
+        <div class="name-rating">
+          <h3>Kimchi Ramen</h3>
+          <h3 class="rating">★★★★☆</h3>
+        </div>
+        <p>
+          A fiery Korean twist with tangy kimchi, spicy gochujang broth, soft
+          egg, and spring onions.
+        </p>
+        <button class="price-button">$25</button>
+        <button class="order-button" onclick="selectRamen('Kimchi Ramen')">
+          Add to Cart
+        </button>
+      </div>
+      <div class="menu-item">
+        <img src="images/Seafood-ramen.webp" alt="Seafood Ramen" />
+        <div class="name-rating">
+          <h3>Seafood Ramen</h3>
+          <h3 class="rating">★★★★☆</h3>
+        </div>
+        <p>
+          A savory ocean-inspired broth with shrimp and seaweed — rich in
+          flavor!
+        </p>
+        <button class="price-button">$28</button>
+        <button class="order-button" onclick="selectRamen('Seafood Ramen')">
+          Add to Cart
+        </button>
+      </div>
+      <div class="menu-item">
+        <img
+          src="https://www.spoonforkbacon.com/wp-content/uploads/2024/04/spicy-ramen-noodles-recipe-card.jpg"
+          alt="Spicy Ramen"
+        />
+        <div class="name-rating">
+          <h3>Spicy Ramen</h3>
+          <h3 class="rating">★★★★☆</h3>
+        </div>
+        <p>
+          Fiery chili-infused broth for spice lovers, served with tender chicken
+          and fresh vegetables.
+        </p>
+        <button class="price-button">$13</button>
+        <button class="order-button" onclick="selectRamen('Spicy Ramen')">
+          Add to Cart
+        </button>
+      </div>
+      <div class="menu-item">
+        <img src="images/Veggie-ramen.jpeg" alt="Vegetarian Ramen" />
+        <div class="name-rating">
+          <h3>Vegetarian Ramen</h3>
+          <h3 class="rating">★★★★☆</h3>
+        </div>
+        <p>
+          A wholesome veggie broth with tofu, mushrooms and baby corn, — 100%
+          meat-free delight!
+        </p>
+        <button class="price-button">$22</button>
+        <button class="order-button" onclick="selectRamen('Vegetarian Ramen')">
+          Add to Cart
+        </button>
+      </div>
+      <div class="menu-item">
+        <img src="images/Matcha-ramen.webp" alt="Matcha Ramen" />
+        <div class="name-rating">
+          <h3>Matcha Ramen</h3>
+          <h3 class="rating">★★★★☆</h3>
+        </div>
+        <p>
+          Vibrant green noodles infused with matcha and served with chilli oil.
+        </p>
+        <button class="price-button">$24</button>
+        <button class="order-button" onclick="selectRamen('Matcha Ramen')">
+          Add to Cart
+        </button>
+      </div>
+    </section>
+    <div id="Testimonials">
+      <div class="t-right">
+        <p>
+          🥢<span class="highlight1">What</span> Our
+          <span class="highlight2">Customers</span> Are
+          <span class="highlight3">Slurping</span> About!
+        </p>
+      </div>
+      <div class="t-left">
+        <section class="menu swiper">
+          <div class="swiper-wrapper">
+            <div class="test-cards swiper-slide">
+              <img
+                id="img-round"
+                src="images/testimonial1.jpg"
+                alt="Ethan Rodriguez"
+              />
+              <h3>Ethan Rodriguez</h3>
+              <p>
+                A perfect blend of authenticity and innovation. This is not just
+                food — it’s a full culinary experience.
+              </p>
+            </div>
+            <div class="test-cards swiper-slide">
+              <img
+                id="img-round"
+                src="images/testimonial2.jpg"
+                alt="Sophia Hassan"
+              />
+              <h3>Sophia Hassan</h3>
+              <p>
+                The vibe, the ramen, the plating — everything screams comfort
+                with class. My favorite spot for a cozy ramen night!
+              </p>
+            </div>
+            <div class="test-cards swiper-slide">
+              <img
+                id="img-round"
+                src="images/testimonial3.jpg"
+                alt="Mike Weill"
+              />
+              <h3>Mike Weill</h3>
+              <p>
+                Deliciously addictive! The broth is deep and flavorful, and the
+                toppings are always fresh and generous.
+              </p>
+            </div>
+            <div class="test-cards swiper-slide">
+              <img
+                id="img-round"
+                src="images/testimonial4.jpg"
+                alt="Meera Patel"
+              />
+              <h3>Meera Patel</h3>
+              <p>
+                It’s rare to find ramen that feels this soulful. From first
+                spoon to last, it’s a bowl full of joy
+              </p>
+            </div>
+            <div class="test-cards swiper-slide">
+              <img
+                id="img-round"
+                src="images/testimonial5.jpg"
+                alt="Bruce Anderson"
+              />
+              <h3>Bruce Anderson</h3>
+              <p>
+                As someone who travels often, this place is a rare gem. The
+                ramen hits the perfect balance of tradition and creativity
+              </p>
+            </div>
+            <div class="test-cards swiper-slide">
+              <img
+                id="img-round"
+                src="images/testimonial6.jpg"
+                alt="Aarav Mehta"
+              />
+              <h3>Aarav Mehta</h3>
+              <p>
+                Absolutely loved the depth of flavor in the broth — rich,
+                comforting, and authentic. It instantly took me back to Tokyo!
+              </p>
+            </div>
+            <div class="test-cards swiper-slide">
+              <img
+                id="img-round"
+                src="images/testimonial7.jpg"
+                alt="Kiara Shah"
+              />
+              <h3>Kiara Shah</h3>
+              <p>
+                It’s Insta-worthy and soul-satisfying! The Miso ramen is my
+                absolute favorite. I could eat it every day!
+              </p>
+            </div>
+            <div class="test-cards swiper-slide">
+              <img
+                id="img-round"
+                src="images/testimonial8.jpg"
+                alt="Anita Roy"
+              />
+              <h3>Anita Roy</h3>
+              <p>
+                The presentation is stunning, and the taste even better! Their
+                vegetarian options are just as satisfying. Highly recommended.
+              </p>
+            </div>
+            <div class="test-cards swiper-slide">
+              <img
+                id="img-round"
+                src="images/testimonial9.avif"
+                alt="Selena Monroe"
+              />
+              <h3>Selena Monroe</h3>
+              <p>
+                You can tell the ingredients are fresh and of high quality. The
+                ambience and service only add to the whole experience!
+              </p>
+            </div>
+            <div class="test-cards swiper-slide">
+              <img
+                id="img-round"
+                src="images/testimonial10.jpg"
+                alt="Sandeep Iyer"
+              />
+              <h3>Sandeep Iyer</h3>
+              <p>
+                From the perfectly cooked noodles to the fresh toppings — every
+                bite feels thoughtfully crafted. My go-to comfort meal now!
+              </p>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </section>
+      </div>
+    </div>
+    <div class="contact" id="contact">
+      <h3 class="contact-heading">Order Now</h3>
+      <h1 class="contact-subHeading">Free and Fast</h1>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="tel" placeholder="Your Phone Number" required />
+        <input
+          type="text"
+          placeholder="Your Order (e.g., Shoyu Ramen)"
+          required
+        />
+        <input type="text" placeholder="Additional Items (Optional)" />
+        <input type="number" placeholder="Quantity" required min="1" />
+        <input type="datetime-local" required />
+        <textarea placeholder="Your Address" required></textarea>
+        <textarea placeholder="Any Message (Optional)"></textarea>
+        <button type="submit">Order Now</button>
+      </form>
+    </div>
+    <footer>
+      <p class="footer-text">
+        &copy; 2025 Ramen Delight | All rights reserved | Established in Tokyo,
+        1998.
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
