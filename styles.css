@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,700;1,300;1,700&display=swap');
 html {
-  scroll-behaviour: smooth;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -329,3 +329,25 @@ footer {
   font-size: 0.9rem;
 }
 
+#scroll-to-top-btn {
+    font-size: 1.3rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    z-index: 99;
+    border: none;
+    outline: none;
+    padding: 1.1rem;
+    background: radial-gradient(#e34902, #dd170c, #f75b07);
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1);
+    transition: opacity 0.3s ease, box-shadow 0.3s ease, scale 0.5s ease-in-out;
+    display: none;
+}
+
+#scroll-to-top-btn:hover {
+    transform: scale(1.2);
+    box-shadow: 0 12px 35px #b8a0a0e0;
+}
