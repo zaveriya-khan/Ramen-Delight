@@ -65,6 +65,31 @@ header {
   display: none;
 }
 
+#cart {
+    text-decoration: none;
+  }
+
+  #cart i {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    font-size: 1.4rem;
+  }
+
+  #cart-quantity {
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    background-color: #09a426;
+    color: #fff;
+    padding: 0.2rem;
+    position: absolute;
+    top: -12px;
+    right: -6px;
+    line-height: 0.8rem;
+  }
+
 @media (max-width: 768px) {
   .nav-menu {
     flex-direction: column;
